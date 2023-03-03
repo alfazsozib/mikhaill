@@ -6,7 +6,6 @@ import slide4 from "./images/washington-skyline.webp"
 import Image from 'next/image'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Navbar from './Navbar'
 
 
 function Hero() {
@@ -23,16 +22,16 @@ function Hero() {
             showIndicators={false}
         >
                 <div>
-                    <Image src={slide1} />
+                    <Image src={slide1} alt={"img1"}/>
                 </div>
                 <div>   
-                    <Image src={slide2} />
+                    <Image src={slide2} alt={"img2"}/>
                 </div>
                 <div>
-                    <Image src={slide3} />
+                    <Image src={slide3} alt={"img3"}/>
                 </div>
                 <div>
-                    <Image src={slide4} />
+                    <Image src={slide4} alt={"img4"}/>
                 </div>
                 
         </Carousel>
