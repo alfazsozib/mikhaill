@@ -8,7 +8,7 @@ const returnWindow=()=>{
         })
       }
   return (
-    <div className='w-[100%] bg-[#f5f5f8] relative h-60 max-w-[1644px] mx-auto'>
+    <div className='w-[100%] bg-[#f5f5f8] relative h-40 max-w-[1644px] mx-auto'>
         <div>
             <h1 className='text-blue-800 underline absolute bottom-28  left-4'><a href="/"> Site Map</a></h1>
         </div>    

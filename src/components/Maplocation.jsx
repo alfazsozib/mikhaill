@@ -4,7 +4,7 @@ import locationMap from "./images/map.PNG"
 
 function Maplocation() {
   return (
-    <div className='w-[100%] bg-[#efeff3] pt-40 max-w-[1644px] mx-auto'>
+    <div className='w-[100%] bg-[#f5f5f8] pt-40 max-w-[1644px] mx-auto'>
         <Image src={locationMap} alt="location" />        
     </div>
   )
