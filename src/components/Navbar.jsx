@@ -2,7 +2,7 @@ import Image from 'next/image'
 import logo from  "./images/logo-removebg-preview.png"
 import React, { useState } from 'react'
 import { IoMdArrowDropdown } from "react-icons/io"
-
+import Link from 'next/link'
 
 
 function Navbar() {
@@ -38,15 +38,15 @@ function Navbar() {
  {prevAboutNav &&
     <div onMouseEnter={()=>setPrevAboutNav(true)} onMouseLeave={()=>setPrevAboutNav(false)} className='w-[100%] h-60 absolute top-22 z-10 bg-[#6610f2]'>
         <ul className='grid grid-cols-3 gap-4 text-center p-5 w-[100%]'>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="ourmission">Our Mission Statement</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">Our Associates</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">Our Location</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">Our Firm</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">Our Services</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">Our Qualifications</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">Other Locations</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">Featured Links</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">Tell A Friend</a></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="ourmission">Our Mission Statement</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">Our Associates</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">Our Location</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">Our Firm</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">Our Services</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">Our Qualifications</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">Other Locations</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">Featured Links</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">Tell A Friend</Link></li>
         </ul>
     
     </div> 
@@ -54,12 +54,12 @@ function Navbar() {
     {prevResNav &&
     <div onMouseEnter={()=>setPrevResNav(true)} onMouseLeave={()=>setPrevResNav(false)} className='w-[100%] h-56 absolute top-22 z-10 bg-[#6610f2]'>
         <ul className='grid grid-cols-3 gap-4 text-center p-5 w-[100%]'>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="/">Articles</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="/">Flip Books</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="/">Newsletters</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="/">Glossary</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="/">Tax Library</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="/">Videos</a></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="/">Articles</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="/">Flip Books</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="/">Newsletters</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="/">Glossary</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="/">Tax Library</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="/">Videos</Link></li>
           
         </ul>
     </div> 
@@ -68,12 +68,12 @@ function Navbar() {
     {prevReqNav &&
     <div onMouseEnter={()=>setPrevReqNav(true)} onMouseLeave={()=>setPrevReqNav(false)} className='w-[100%] h-56 absolute top-22 z-10 bg-[#6610f2]'>
         <ul className='grid grid-cols-3 gap-4 text-center p-4 w-[100%]'>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">Annuity</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">Life Insurance</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">Individual Health</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">Disability Income Insurance</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">401(k) Information Request</a></li>
-          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><a className='text-white text-lg' href="">Information Request</a></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">Annuity</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">Life Insurance</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">Individual Health</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">Disability Income Insurance</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">401(k) Information Request</Link></li>
+          <li className='p-2 hover:bg-[#5105cc] border-b-[1px] hover:underline'><Link className='text-white text-lg' href="">Information Request</Link></li>
          
         </ul>
     </div> 
